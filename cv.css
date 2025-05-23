@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-bottom: 30px;
+}
+.navigation .profil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation .profil img{
+    height:50px ;
+    width:50px ;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.navigation .profil h1{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.navigation ul{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navigation .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navigation .menu li{
+    margin-left: 15px;
+    cursor:pointer ;
+    border: 3px solid black;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: aqua;
+    color: white;
+}
+section{
+    line-height: 30px;
+    background-color: rgba(14, 3, 3, 0.548);
+}
+section img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+}
+section h4{
+    color: aqua;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section p{
+    margin-left: 15px;
+   
+}
+.competence li{
+    text-decoration: none;
+    margin-left: 30px;
+}
+footer{
+    margin-top: 30px;
+    margin-left: 0;
+    background-color: rgba(236, 231, 231, 0.623);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    place-items: center;
+    flex: 1;
+}
+footer h2{
+    color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    
+}
+.image-footer img{
+    margin-left: 10px;
+    padding: 7px;
+    width: 30px;
+    height: 30px; 
+    align-items: center;
+    
+
+}
+.footer p{
+    text-transform: capitalize;
+    line-height: 30px;
+    color: white; 
+    
+}
+@media screen and (max-width:600px) {
+    .navigation{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        position: sticky;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center ;
+        text-align: center;
+    }
+    .profil{
+        margin-bottom: 5px;
+   
+    }
+    .menu{
+        margin-bottom: 10px;
+        width: 100%;
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        /* Masquer les liens de navigation par défaut */
+    }
+    .menu li {
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    section{
+        justify-content: center;
+        align-items: center;
+    }
+    section p{
+        background-color: rgba(255, 255, 255, 0.589);
+        border-radius: 15px ;
+        border: 5px solid black;
+    }
+    .competence li{
+        background-color: rgba(255, 255, 255, 0.589);
+        border-radius: 15px ;
+        border: 5px solid black;
+    }
+    .footer{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
